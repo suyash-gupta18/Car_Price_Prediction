@@ -6,9 +6,9 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 import streamlit as st
 
-lin_reg_model=pk.load(open('lin_reg_model.pkl','rb')) 
 
 def main():
+   lin_reg_model=pk.load(open('lin_reg_model.pkl','rb')) 
    st.header('Car Price Prediction Model')
    cars_data=pd.read_csv('car data.csv')
 
