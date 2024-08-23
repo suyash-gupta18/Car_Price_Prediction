@@ -29,6 +29,6 @@ def main():
      input_data_model.replace({'Transmission':{'Manual':0,'Automatic':1}},inplace=True)
 
      car_price = lin_reg_model.predict(input_data_model)
-     st.markdown('Car Price is going to be '+ str(car_price[0] + ' lakhs'))
+     st.markdown('Car Price is going to be '+ str(car_price[0]) + ' lakhs')
 if __name__ == "__main__":
     main()
