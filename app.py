@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 import pickle as pk
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn import metrics
 import streamlit as st
 
 lin_reg_model=pk.load(open('lin_reg_model.pkl','rb')) 
